@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <head>
+        <title>PAYMENT FORM</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        
+    <body>
+        <div>
+        <h1>Payment Form</h1><hr>
+        <p>Required fields are followed by <b><abbr title="required">*</abbr></b></p><hr>
+        <h2>Contact Information</h2>
+        <fieldset>
+            <legend>Title</legend>
+            <ul>
+                <li><input type="radio" id="king" name="king">
+                    <label for="king">Mr.</label></li>
+                <li><input type="radio" id="queen" name="queen">
+                    <label for="queen">Ms.</label></li>
+                <li><input type="radio" id="joker" name="joker">
+                    <label for="joker">Dr.</label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Mode</legend>
+            <input type="checkbox" id="cash" name="cash">Cash
+            <input type="checkbox" id="db" name="db">Debit card
+            <input type="checkbox" id="cc" name="cc">Credit card
+        </fieldset><br>
+        <label for="name">Name: <abbr title="required">*</abbr></label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">E-mail: <abbr title="required">*</abbr></label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">Password: <abbr title="required">*</abbr></label>
+        <input type="password" id="password" name="password"><br><br>
+        <h2>Payment Information</h2>
+        <label for="card_type">Card type</label>
+        <select id="card_type" name="card_type">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="rupay">Rupay</option>
+            <option value="american express">American Express</option>
+            <option value="discover">Discover</option>
+        </select><br><br>
+        <label for="c_no">Card number: <abbr title="required">*</abbr></label>
+        <input type="number" id="c_no" name="c_no"><br><br>
+        <label for="exp">Expiration date *<i>formatted as mm/dd/yyyy</i></label>
+        <input type="date" required pattern="\d{4}-\d{2}-\d{2}" id="exp" name="exp" placeholder="mm-dd-yyyy"><br><br>
+        <label for="com">Enter your comments</label>
+        <textarea id="com" name="com" rows="4" cols="" placeholder="Enter your comments here"></textarea><br><br>
+        <button type="submit" value="Validate">Validate the payment</button>
+    </div>
+    </body>
+</html>
